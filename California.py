@@ -1,18 +1,10 @@
-from dataclasses import fields
-
 import urllib3
-from urllib.parse import quote_plus
-import requests
-import os
 from bs4 import BeautifulSoup
-import bs4.element
 http = urllib3.PoolManager()
-
 response=http.request("GET","https://leginfo.legislature.ca.gov/faces/billSearchClient.xhtml")
 soup= BeautifulSoup(response.data, 'html.parser')
 session_years = soup.find("select",{"id":"session_year"}).find("option").attrs["value"]
 print("got session")
-
 bills_url=f'https://leginfo.legislature.ca.gov/faces/billSearchClient.xhtml?session_year={session_years}'
 response=http.request("GET",bills_url)
 soup = BeautifulSoup(response.data, 'html.parser')
