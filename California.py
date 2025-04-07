@@ -1,3 +1,4 @@
+#todo kinda slow, may need to update to be multithreaded or something
 import urllib3
 from bs4 import BeautifulSoup
 http = urllib3.PoolManager()
