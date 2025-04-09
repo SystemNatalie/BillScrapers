@@ -1,8 +1,4 @@
 # BillScrapers
 Bill scrapers for the LegislaTRANS project.
 
-TODO:
-.
-[ ] get bill status indicators, metadata. etc
-.
-[ ] ensure all scrapers include things like HRs, SCRs, etc...
+TODO:<br/>[ ] get bill status indicators, metadata. etc<br/>[ ] ensure all scrapers include things like HRs, SCRs, etc...
