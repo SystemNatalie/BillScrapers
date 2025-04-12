@@ -6,7 +6,7 @@ import urllib3
 http = urllib3.PoolManager()
 from bs4 import BeautifulSoup
 current_session:int
-getpdf=False
+getpdf=True
 if getpdf:
     out_ext = "pdf"
 else:

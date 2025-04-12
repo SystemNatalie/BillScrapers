@@ -1,8 +1,6 @@
-import bs4.element
 import urllib3
 import os
 from bs4 import BeautifulSoup
-import bs4.element
 http = urllib3.PoolManager()
 
 #Originally for when we needed to get the session, however we're just assuming that https://www.azleg.gov/bills/

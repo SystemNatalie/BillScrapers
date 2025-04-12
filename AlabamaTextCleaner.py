@@ -15,7 +15,7 @@ for file in os.listdir("bills/alabama"):
         2   billversion
         3   By Representative(s) xyz,abc,...
         4   RFD: xyz...
-        5   First Read: 04-Feb-25
+        5   First Read: DD-MON-YR
         """
         page:pymupdf.Page
         tripwire=True
